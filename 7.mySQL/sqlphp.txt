@@ -1,0 +1,15 @@
+<?php
+
+$firstname = $_POST['ID'];
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+$sql = "INSERT INTO users(id,firstname,lastname,email,password) VALUES ($firstname,$firstname,$lastname,$email,$password)";
+if(mysqli_query($link, $sql)){
+    echo "<p>New row added successfully!</p>";  
+}else{
+    echo "ERROR: Unable to execute $sql" . mysql_error($link);   
+}
+?>
