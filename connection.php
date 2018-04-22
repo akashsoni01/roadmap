@@ -5,5 +5,3 @@ if(mysqli_connect_error()){
     echo "<script>window.alert('Hi!')</script>";
 }
 ?>
-#comment by akash branch
-#testing vim
