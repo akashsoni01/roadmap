@@ -13,7 +13,7 @@ header('Location: http://akash.thecompletewebhosting.com/');
 
 
 //connect
-$link = new mysqli("185.116.214.59", "akashthe_user", "akash@123", "akashthe_roadmap"); // your host should be local if you are using my free web hosting
+$link = new mysqli("185.116.214", "akashthe_user", "akash@123", "akashthe_roadmap"); // your host should be local if you are using my free web hosting
 //check connection
 
 if($link->connect_errno > 0){
